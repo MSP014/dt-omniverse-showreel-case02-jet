@@ -13,6 +13,7 @@ AI/
 GIF/
 MOV/
 PNG/
+protocols/
 
 # Extensions (Heavy Binaries)
 *.usd
@@ -36,6 +37,7 @@ venv/
 # IDE
 .vscode/
 .idea/
+*.code-workspace
 
 # System
 thumbs.db
