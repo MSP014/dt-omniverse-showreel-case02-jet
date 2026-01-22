@@ -1,0 +1,49 @@
+Trent 1000 Testbed FUI Parameters
+1. Core Engine Performance:
+
+N1 RPM: (Fan Speed) - Units: % or RPM
+
+N2 RPM: (Intermediate Pressure Rotor Speed) - Units: % or RPM
+
+N3 RPM: (High Pressure Rotor Speed) - Units: % or RPM
+
+TGT (°C): (Turbine Gas Temperature)
+
+Display with zones/limits:
+
+Ground Start/Shutdown Max: 700°C
+
+In-Flight Relight Max: 900°C
+
+Take-Off (5 min limit): 900°C
+
+Max Continuous: 850°C
+
+Transient (20 sec limit): 920°C
+
+Fuel Flow: - Units: kg/s or pph (pounds per hour)
+
+Thrust: - Units: kN or lbf
+
+2. Auxiliary Systems:
+
+Oil Pressure: - Units: psi or bar
+Oil Temperature (°C):
+
+Bleed Air Flow: (% of core mass flow) - Maybe just an indicator: ON/OFF or % value
+
+Anti-Ice System Status: - Indicator: ON/OFF
+
+3. Engine Health & Status:
+
+Vibration N1: - Units: ips (inches per second) or specific vibration units
+Vibration N2: - Units: ips
+Vibration N3: - Units: ips
+
+Engine Mode: - Indicator: IDLE / TAKEOFF / CRUISE / MAX
+
+Overall Status: - Indicator: NORMAL / WARNING / CRITICAL
+
+4. Environmental Conditions (Optional but adds realism):
+
+OAT (°C): (Outside Air Temperature)

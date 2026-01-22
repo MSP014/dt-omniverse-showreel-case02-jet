@@ -1,0 +1,43 @@
+# Custom Exclusions (Heavy/Source/Temp)
+assets/
+cache/
+AE/
+PRJ/
+Refs/
+geo/
+_incoming/
+EXR/
+MP4/
+OUT/
+AI/
+GIF/
+MOV/
+PNG/
+
+# Extensions (Heavy Binaries)
+*.usd
+*.usdc
+*.hip
+*.hipnc
+*.aep
+*.prproj
+*.bgeo.sc
+
+# Python
+__pycache__/
+*.pyc
+.env
+.venv
+env/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# System
+thumbs.db
+Thumbs.db
+.DS_Store

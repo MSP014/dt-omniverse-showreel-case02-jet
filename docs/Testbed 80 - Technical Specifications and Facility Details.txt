@@ -1,0 +1,19 @@
+Technical Specifications and Facility Details:
+
+Area: 7,500 m² (larger than a football pitch)
+
+Cost: £90 million
+
+Door: 380–400 tons, up to 12m long, 10m high, 1–1.7m thick
+
+Fuel Tank: 140,000 liters (SAF compatible)
+
+Testing Thrust: up to 155klbf (enough for a Boeing 747 with a single engine)
+
+Wall material: 1.7 meter thick concrete, 3,128 tons of steel, 27,000m³ concrete (11 Olympic-size pools)
+
+Sensors/Data: 10,000+ parameters, 200,000 samples/sec, advanced data systems
+
+X-ray Imaging: in-operation x-ray up to 30 images/sec, unique for aerospace testbeds
+
+Upcoming engine focus: Trent XWB, Trent 1000, UltraFan (next-gen geared)
