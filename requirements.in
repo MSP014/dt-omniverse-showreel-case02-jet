@@ -1,21 +1,25 @@
-# Core
-requests>=2.31.0
-pydantic>=2.5.0
-scipy>=1.11.0  # Physics math
+# NVIDIA Showreel Standard - Universal Dependency Stack
 
-# Tools
-jira>=3.5.0
-pip-tools>=7.3.0
-python-dotenv>=1.0.0
-pre-commit>=3.3.0
+# Infrastructure & Orchestration
+pip-tools
+pre-commit
+python-dotenv
+requests
+jira
 
-# Testing
-pytest>=7.4.0
-pytest-cov>=4.1.0
-
-# Linting (Check versions in .pre-commit-config.yaml)
-flake8
+# QA & Security
 black
 isort
+flake8
 bandit
 pip-audit
+
+# Testing
+pytest
+pytest-asyncio
+pytest-cov
+
+# Data & Physics (Digital Twin Foundation)
+pydantic
+numpy
+scipy
