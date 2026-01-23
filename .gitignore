@@ -1,45 +1,66 @@
-# Custom Exclusions (Heavy/Source/Temp)
+# NVIDIA Showreel - Unified .gitignore
+# Estate Manager: Higgins
+
+# --- AI Protocol (Local Only) ---
+protocols/
+
+# --- Heavy Work Directories (Project Structure) ---
 assets/
 cache/
+Refs/
+_incoming/
+geo/
+HIP/
+OUT/
+
+# --- Source/Project Files (Software Specific) ---
 AE/
 PRJ/
-Refs/
-geo/
-_incoming/
+AI/
+
+# --- Media & Renders (Heavy) ---
 EXR/
 MP4/
-OUT/
-AI/
 GIF/
 MOV/
 PNG/
-protocols/
 
-# Extensions (Heavy Binaries)
+# --- File Extensions (Specific Blocklist) ---
+# USD (Heavy Binary Crates blocked, ASCII allowed if strictly needed, but guarding general USD)
 *.usd
 *.usdc
+*.usdz
+
+# Houdini
 *.hip
 *.hipnc
+*.hiplc
+*.bgeo
+*.bgeo.sc
+*.vdb
+*.abc
+
+# Adobe / Image
 *.aep
 *.prproj
-*.bgeo.sc
+*.psd
+*.ai
+*.exr
+*.hdr
 
-# Python
+# --- Python ---
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
 .env
 .venv
 env/
 venv/
-.ipynb_checkpoints/
 .pytest_cache/
 
-# IDE
-.vscode/
+# --- Tools & System ---
 .idea/
+.vscode/
 *.code-workspace
-
-# System
-thumbs.db
-Thumbs.db
 .DS_Store
+Thumbs.db

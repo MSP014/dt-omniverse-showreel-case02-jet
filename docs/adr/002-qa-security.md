@@ -6,11 +6,11 @@ Accepted
 
 ## Context
 
-"Works on my machine" is not an acceptable delivery standard. We deal with complex pipelines where a single broken script can stop a render farm. We also need to prevent credential leaks.
+A Mechanical Digital Twin (Jet Engine) requires rigorous data integrity. Broken telemetry processing or sim-cache ingestion could lead to visual artifacts or pipeline crashes. We must also protect proprietary telemetry schemas.
 
 ## Decision
 
-We enforce a strict "Shift Left" strategy using `pre-commit` hooks:
+We enforce a strict "Shift Left" strategy using `pre-commit` hooks and automated guardrails:
 
 ### 1. Guardrails (Pre-commit)
 
@@ -23,9 +23,15 @@ We enforce a strict "Shift Left" strategy using `pre-commit` hooks:
 ### 2. Testing
 
 * `pytest` must pass locally before push.
-* Tests should mock external dependencies (Omniverse/Houdini APIs) where possible to run fast.
+* **Telemetry Validation**: Tests should verify telemetry ingestion scripts and data range clipping (e.g., RPM cannot be negative).
+* **Note**: Tests are covered by Linters (Black/Flake8) but excluded from Bandit security scans to avoid false positives related to `assert` usage.
+
+### 3. Secrets Management
+
+* **Isolation**: All sensitive data (credentials, asset server keys) MUST be stored in a `.env` file.
+* **Sanity**: The `.env` file MUST be included in `.gitignore`. Never commit secrets to version control.
 
 ## Consequences
 
-* **Positive:** Higher code quality, reduced security risk, blocked accidental large files.
+* **Positive:** Higher code quality, reduced security risk, and blocked accidental large files.
 * **Negative:** Initial setup friction; `pip-audit` requires maintenance of `requirements.txt`.

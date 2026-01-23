@@ -1,4 +1,4 @@
-# Case 02: Jet Engine (Digital Twin)
+# Case 02: Jet Engine (Aerospace Propulsion Digital Twin)
 
 > [!WARNING]
 > **Work in Progress:** This project is currently under active development. Some links and assets may be placeholders.
@@ -26,9 +26,20 @@
 
 ## 🏗️ Engineering Trace
 
-Systematic documentation of architectural choices, naming conventions, and security protocols used to build this Digital Twin.
+Systematic documentation of architectural choices, naming conventions, and security protocols used to build this Digital Twin showcase.
 
 * [**Read our Engineering Decisions (ADRs)**](docs/adr/) for deep dives into Naming, Security, and Architecture.
+
+## 📂 Repository Structure
+
+```text
+.
+├── docs/        # ADRs and knowledge base
+├── plans/       # Implementation plans & tech debt
+├── src/         # Core logic and scripts
+├── tests/       # Validation and testing suite
+└── tools/       # Internal pipeline utilities
+```
 
 ---
 
