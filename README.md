@@ -50,7 +50,7 @@ Systematic documentation of architectural choices, naming conventions, and secur
 ```text
 .
 ├── docs/        # ADRs and knowledge base
-├── plans/       # Implementation plans & tech debt
+│   ├── plans/   # Implementation plans & tech debt
 ├── src/         # Core logic and scripts
 ├── tests/       # Validation and testing suite
 └── tools/       # Internal pipeline utilities
