@@ -6,7 +6,7 @@
 ---
 
 > **Role:** L1 Digital Twin (Mechanical Engineering)
-> **Stack:** Houdini (Sim/PDG), Omniverse (USD/Python), Jira Integration
+> **Stack:** Houdini 21.0.596 (Sim/PDG), Omniverse 2024.x (USD/Python), Isaac Sim, Jira Integration
 
 ---
 
@@ -49,12 +49,22 @@ Systematic documentation of architectural choices, naming conventions, and secur
 
 ```text
 .
-├── docs/        # ADRs and knowledge base
-│   ├── plans/   # Implementation plans & tech debt
-├── src/         # Core logic and scripts
-├── tests/       # Validation and testing suite
-└── tools/       # Internal pipeline utilities
+├── docs/                 # ADRs, plans, and knowledge base
+│   ├── adr/              # Architecture Decision Records
+│   ├── plans/            # Implementation plans & tech debt
+│   └── knowledge_base/   # Reference materials (factory tours, specs, FUI design)
+├── src/                  # Core logic and scripts
+├── tests/                # Validation and testing suite
+└── tools/                # Internal pipeline utilities (Jira, data generation)
 ```
+
+### 📚 Knowledge Base
+
+The `docs/knowledge_base/` directory contains curated reference materials:
+
+- **[Flightradar24 Factory Tour Transcript](docs/knowledge_base/Flightradar24%20-%202026.01.30%20-%20How%20Rolls-Royce%20Jet%20Engines%20Are%20Built.md)**: Technical specifications (Trent 1000), sourced from Andy Dawkins (GM, Engine Overhaul Services) and Paul Flint (Chief of Capability Programs)
+- **[Testbed 80 Specifications](docs/knowledge_base/Testbed%2080%20-%20Technical%20Specifications%20and%20Facility%20Details.txt)**: Facility dimensions, acoustic treatment, structural details
+- **[FUI and HUD Design](docs/knowledge_base/FUI%20and%20HUD.txt)**: Parameters for Heads-Up Display telemetry screens
 
 ---
 
@@ -65,7 +75,17 @@ To keep this repository lightweight (GitHub < 1GB), heavy binary assets are stor
 - [**Download Heavy Assets (One Drive / S3 Link TBD)**](https://example.com/placeholder)
   - Includes: `*.usd` crates, `*.hip` source files, and high-res textures.
 
-## 🛠️ Setup & Installation
+## 🛠️ Toolchain & Environment
+
+**Required Software:**
+
+- **Houdini**: 21.0.596 (for PDG/Pyro/Fluid simulations)
+- **Omniverse**: 2024.x (USD scene assembly, Isaac Sim integration)
+- **Isaac Sim**: 5.1 (for physics simulation and sensor emulation)
+- **Python**: 3.10+ (for data generation and pipeline scripting)
+- **Conda**: For environment isolation (`case02-env`)
+
+**Install Steps:**
 
 1. **Clone:** `git clone https://github.com/MSP014/dt-omniverse-showreel-case02-jet.git`
 2. **Env:** Create conda env: `conda create -n case02-env python=3.10`
