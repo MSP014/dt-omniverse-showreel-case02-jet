@@ -39,9 +39,9 @@ The digital twin integrates **pre-simulated Houdini caches for each operational 
 2. **Telemetry Dashboard:** `![FUI Demo](docs/img/fui_demo.gif)`
 3. **Pipeline Flow:** `![Data Flow](docs/img/pipeline_diagram.png)`
 
-## 🏗️ Engineering Trace
+## 🏗️ Architecture & Decisions
 
-Systematic documentation of architectural choices, naming conventions, and security protocols used to build this Digital Twin showcase.
+This project follows a **README-driven structure** to manage the complexity of hybrid Houdini/Omniverse pipelines.
 
 - [**Read our Engineering Decisions (ADRs)**](docs/adr/) for deep dives into Naming, Security, and Architecture.
 
@@ -109,7 +109,7 @@ To keep this repository lightweight, heavy binary assets (USD Crates, Textures, 
 
 **Install Steps:**
 
-1. **Clone:** `git clone https://github.com/MSP014/dt-omniverse-showreel-case02-jet.git`
+1. **Clone:** `git clone https://github.com/MSP014/dt-openusd-showcase-case02-jet.git`
 2. **Hydration:** (See "Asset Hydration" above) - Extract assets to `assets/_external/`.
 3. **Env:** Create conda env: `conda create -n case02-env python=3.10`
 4. **Deps:** `pip install -r requirements.txt`
@@ -119,4 +119,5 @@ To keep this repository lightweight, heavy binary assets (USD Crates, Textures, 
 
 ## 📜 Changelog
 
+- **2026-02-02:** Implemented external storage strategy for heavy assets (Git-agnostic).
 - **2026-01-22:** Initial repository bootstrap. Established "Gold Standard" structure (ADRs, Pre-commit, Hybrid Access).
