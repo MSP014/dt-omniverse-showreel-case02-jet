@@ -23,7 +23,10 @@ Format: `dt-omniverse-showreel-case##-[key]`
 * **case02**: Sequence ID
 * **jet**: Project Key (Jet Engine)
 
-### 2. File Layers (Snake Case)
+### 2. Folders and File Layers (Snake Case)
+
+* **Directories:** All directories MUST be written in `snake_case` (e.g., `refs/`, `assets/`, `audio_tracks/`).
+* `mesh_*` (Geometry, e.g., `mesh_rack_A01`)
 
 * `mesh_*` (Geometry, e.g., `mesh_turbine_blade`)
 * `mat_*` (Materials / MDL)

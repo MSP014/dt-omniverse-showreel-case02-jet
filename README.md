@@ -25,8 +25,8 @@ The digital twin integrates **pre-simulated Houdini caches for each operational 
 
 > **Deep Dive:**
 >
-> - [Rolls-Royce Factory Tour Transcript](./docs/knowledge_base/Flightradar24%20-%202026.01.30%20-%20How%20Rolls-Royce%20Jet%20Engines%20Are%20Built.md)
-> - [Testbed 80 Technical Specifications](./docs/knowledge_base/Testbed%2080%20-%20Technical%20Specifications%20and%20Facility%20Details.txt)
+> - [Rolls-Royce Factory Tour Transcript](./docs/knowledge_base/transcripts/Flightradar24%20-%202026.01.30%20-%20How%20Rolls-Royce%20Jet%20Engines%20Are%20Built.md)
+> - [Testbed 80 Technical Specifications](./docs/knowledge_base/Testbed_80_Facility_Details.md)
 > - [FUI and HUD Design Notes](./docs/knowledge_base/FUI%20and%20HUD.txt)
 
 ---
@@ -74,8 +74,9 @@ This project follows a **README-driven structure** to manage the complexity of h
 
 The `docs/knowledge_base/` directory contains curated reference materials:
 
-- **[Flightradar24 Factory Tour Transcript](docs/knowledge_base/Flightradar24%20-%202026.01.30%20-%20How%20Rolls-Royce%20Jet%20Engines%20Are%20Built.md)**: Technical specifications (Trent 1000), sourced from Andy Dawkins (GM, Engine Overhaul Services) and Paul Flint (Chief of Capability Programs)
-- **[Testbed 80 Specifications](docs/knowledge_base/Testbed%2080%20-%20Technical%20Specifications%20and%20Facility%20Details.txt)**: Facility dimensions, acoustic treatment, structural details
+- **[Knowledge Base Index](docs/knowledge_base/README.md)**: Central directory for all concepts, technical specs, and USD architecture rules.
+- **[Flightradar24 Factory Tour Transcript](docs/knowledge_base/transcripts/Flightradar24%20-%202026.01.30%20-%20How%20Rolls-Royce%20Jet%20Engines%20Are%20Built.md)**: Technical specifications (Trent 1000), sourced from Andy Dawkins (GM, Engine Overhaul Services) and Paul Flint (Chief of Capability Programs)
+- **[Testbed 80 Specifications](docs/knowledge_base/Testbed_80_Facility_Details.md)**: Facility dimensions, acoustic treatment, structural details
 - **[FUI and HUD Design](docs/knowledge_base/FUI%20and%20HUD.txt)**: Parameters for Heads-Up Display telemetry screens
 
 ---
@@ -114,5 +115,6 @@ To keep this repository lightweight, heavy binary assets (USD Crates, Textures, 
 
 ## 📜 Changelog
 
+- **2026-03-03:** Finalised Digital Twin core concept (`main_concept.md`). Defined 2 LOD levels (External/Close-Up), adaptive thermal mapping, and Fresnel-based streamline visualisations across 4 operational states.
 - **2026-02-02:** Implemented external storage strategy for heavy assets (Git-agnostic).
 - **2026-01-22:** Initial repository bootstrap. Established "Gold Standard" structure (ADRs, Pre-commit, Hybrid Access).
