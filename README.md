@@ -12,10 +12,10 @@
 
 ## 📋 Project Overview
 
-This repository showcases a prototype **Aerospace Propulsion Digital Twin (Level L1)** demonstrating visualisation of internal processes within complex mechanical systems. The case study centres on a jet engine mounted on a test stand, presented in cross-section to reveal thermodynamic and mechanical phenomena in real-time.
+This repository showcases a prototype **Aerospace Propulsion Digital Twin (Level L1)** demonstrating visualisation of internal processes within complex mechanical systems. The case study centres on a jet engine mounted on Testbed 80, presented in dual modes (interactive Assembly and pre-booleaned Cutaway) to reveal thermodynamic and mechanical phenomena in real-time.
 
 **Key Use Case:**
-The digital twin integrates **pre-simulated Houdini caches for each operational regime** (Idle, Takeoff, Cruise, Maximum Thrust). These simulation states are seamlessly switched within Omniverse based on engine mode, visualising temperature distribution, combustion dynamics, and mechanical stresses. This exemplifies how L1 Digital Twins enable sophisticated engineering data visualisation without requiring real-time physics computation.
+The digital twin integrates **pre-simulated Houdini caches for each operational regime** (Idle, Takeoff, Cruise, Max Thrust). These simulation states are seamlessly switched within Omniverse based on engine mode, visualising temperature distribution, combustion dynamics, and mechanical stresses. This exemplifies how L1 Digital Twins enable sophisticated engineering data visualisation without requiring real-time physics computation.
 
 **Project Focus:**
 
@@ -115,6 +115,6 @@ To keep this repository lightweight, heavy binary assets (USD Crates, Textures, 
 
 ## 📜 Changelog
 
-- **2026-03-03:** Finalised Digital Twin core concept (`main_concept.md`). Defined 2 LOD levels (External/Close-Up), adaptive thermal mapping, and Fresnel-based streamline visualisations across 4 operational states.
+- **2026-03-04:** Refined Digital Twin core concept (`main_concept.md`). Formalized strict semantic discipline (no dual encoding), pre-computed VDB cutaway optimization, atomic UI switching, and integrated the Testbed 80 narrative context.
 - **2026-02-02:** Implemented external storage strategy for heavy assets (Git-agnostic).
 - **2026-01-22:** Initial repository bootstrap. Established "Gold Standard" structure (ADRs, Pre-commit, Hybrid Access).
